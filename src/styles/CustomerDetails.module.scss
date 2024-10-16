@@ -1,0 +1,18 @@
+.details {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    h2 {
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+
+    p {
+        margin: 5px 0;
+        font-size: 18px;
+    }
+}
+  

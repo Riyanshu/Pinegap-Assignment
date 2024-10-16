@@ -1,0 +1,24 @@
+.list {
+    width: 30%;
+    overflow-y: auto;
+    border-right: 1px solid lightgray;
+}
+
+.card {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.card:hover {
+    background-color: #f0f0f0;
+}
+
+.active {
+    background-color: #e6e6e6;
+    font-weight: bold;
+    border-right: 2px solid gray;
+}
+  
