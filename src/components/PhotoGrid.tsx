@@ -4,10 +4,11 @@ import Image from 'next/image';
 
 interface PhotoGridProps {
     customerId: string;
+    initialPhotos: string[];
 }
 
-const PhotoGrid: React.FC<PhotoGridProps> = ({ customerId }) => {
-    const [photos, setPhotos] = useState<string[]>([]);
+const PhotoGrid: React.FC<PhotoGridProps> = ({ customerId, initialPhotos }) => {
+    const [photos, setPhotos] = useState<string[]>(initialPhotos);
     const [loading, setLoading] = useState<boolean[]>(Array(9).fill(true));
 
     const fetchPhotos = useCallback(async () => {
